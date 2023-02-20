@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-wswg
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload@sha256:b2f82c90a0c6a7c7d79a39c4ea509d14c9da2d851e434516a808edefe6f51c31
+      - image: quay.io/redhat-appstudio/user-workload@sha256:e786b12d4d88d3c622c2be9c833ced080103f3ae2f7f2b15ecdce878b8f9ddf1
         name: my-nodejs
         ports:
         - containerPort: 3001
