@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: devfile-sample-wswg
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: devfile-sample-wswg
+    app.kubernetes.io/part-of: my-node-app
+  name: devfile-sample-wswg
+  namespace: sbaird-tenant
+spec:
+  ports:
+  - port: 3001
+    targetPort: 3001
+  selector:
+    app.kubernetes.io/instance: devfile-sample-wswg
+status:
+  loadBalancer: {}
