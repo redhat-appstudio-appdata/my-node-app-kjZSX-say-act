@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-wswg
+  namespace: sbaird-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:b2f82c90a0c6a7c7d79a39c4ea509d14c9da2d851e434516a808edefe6f51c31
+        name: my-nodejs
+        resources: {}
+status: {}
